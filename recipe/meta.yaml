@@ -11,8 +11,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  string: py_{{ PKG_BUILDNUM }}
+  number: 2
+  string: pyh{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
