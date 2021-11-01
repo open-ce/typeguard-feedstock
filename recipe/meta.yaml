@@ -11,13 +11,13 @@ source:
 
 build:
   noarch: python
-  number: 2
+  number: 3
   string: pyh{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.4
+    - python
     - pip
     - setuptools_scm
   run:
