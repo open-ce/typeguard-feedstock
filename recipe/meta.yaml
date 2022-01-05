@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 3
+  number: 4
   string: pyh{{ PKG_HASH }}_{{ PKG_BUILDNUM }}
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
@@ -21,7 +21,7 @@ requirements:
     - pip
     - setuptools_scm
   run:
-    - python <3.10
+    - python
 
 test:
   imports:
